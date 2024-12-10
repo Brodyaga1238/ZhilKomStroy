@@ -1,79 +1,90 @@
-.page {
-    position: relative;
+body {
+    font-family: 'Poppins', sans-serif;  /* Применяем шрифт Poppins */
+    font-weight: 400;  /* Стандартная жирность (обычный текст) */
+    line-height: 1.6;  /* Интерлиньяж для удобочитаемости */
+    color: #333;  /* Цвет текста */
+}
+.Menu-top{
+    position: sticky;
+    top: 0;  /* Когда прокручивается, шапка остаётся на верхней границе экрана */
+    z-index: 1000; /* Обеспечивает, чтобы шапка была поверх других элементов */
+}
+/* Шапка */
+.sticky-header {
     display: flex;
-    flex-direction: column;
+    background-color: #181a1b;  /* Голубой фон шапки */
+    color: white;  /* Белый цвет текста */
+    padding: 5px 0; /* Уменьшаем отступы сверху и снизу */
+    width: 100%; /* Шапка занимает всю ширину экрана */
+    align-items: center; /* Центрируем элементы по вертикали */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Тень для шапки */
+}
+.navigation-bar {
+    display: flex;
+    justify-content: center;  /* Центрируем все элементы горизонтально */
+    background-color: #033e62;  /* Голубой фон шапки */
+    color: white;  /* Белый цвет текста */
+    padding: 10px 0; /* Отступы сверху и снизу */
+    width: 100%; /* Шапка занимает всю ширину экрана */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Тень для шапки */
 }
 
-main {
+.header-navmenu ul {
+    display: flex;
+    list-style: none;  /* Убираем маркеры у списка */
+    margin: 0;
+    padding: 0;
+}
+
+.header-navmenu ul li {
+    margin: 0 20px;  /* Отступы между пунктами меню */
+}
+
+.header-navmenu ul li a {
+    color: white;
+    text-decoration: none;  /* Убираем подчеркивание */
+    font-size: 20px;
+    padding: 10px 15px;  /* Внутренние отступы для ссылок */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.header-navmenu ul li a:hover {
+    background-color: #024d73;  /* Цвет фона при наведении */
+    color: #ffd700;  /* Цвет текста при наведении */
+    border-radius: 4px;  /* Скругляем углы */
+}
+
+/* Левый блок шапки */
+.header-logo {
     flex: 1;
+    padding-left: 5px;
+    text-align: left;
 }
 
-.sidebar {
-    background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
+/* Центральный блок */
+.header-time {
+    flex: 2;
+    text-align: left;
 }
 
-.top-row {
-    background-color: #f7f7f7;
-    border-bottom: 1px solid #d6d5d5;
-    justify-content: flex-end;
-    height: 3.5rem;
-    display: flex;
-    align-items: center;
+/* Правый блок */
+.header-tele-coll {
+    text-align: right;
+    padding-right: 5px;
 }
 
-    .top-row ::deep a, .top-row ::deep .btn-link {
-        white-space: nowrap;
-        margin-left: 1.5rem;
-        text-decoration: none;
-    }
-
-    .top-row ::deep a:hover, .top-row ::deep .btn-link:hover {
-        text-decoration: underline;
-    }
-
-    .top-row ::deep a:first-child {
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
-
-@media (max-width: 640.98px) {
-    .top-row {
-        justify-content: space-between;
-    }
-
-    .top-row ::deep a, .top-row ::deep .btn-link {
-        margin-left: 0;
-    }
+/* Стили для кнопки*/
+.header-tele-coll button {
+    background-color: #fd7e14 ;  /* Зеленая кнопка */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
 }
-
-@media (min-width: 641px) {
-    .page {
-        flex-direction: row;
-    }
-
-    .sidebar {
-        width: 250px;
-        height: 100vh;
-        position: sticky;
-        top: 0;
-    }
-
-    .top-row {
-        position: sticky;
-        top: 0;
-        z-index: 1;
-    }
-
-    .top-row.auth ::deep a:first-child {
-        flex: 1;
-        text-align: right;
-        width: 0;
-    }
-
-    .top-row, article {
-        padding-left: 2rem !important;
-        padding-right: 1.5rem !important;
-    }
+/* Кнопка Наведённая*/
+.header-tele-coll button:hover {
+    background-color: #e16a13;  /* Более темный цвет при наведении */
 }
 
 #blazor-error-ui {
@@ -90,9 +101,22 @@ main {
     z-index: 1000;
 }
 
-    #blazor-error-ui .dismiss {
-        cursor: pointer;
-        position: absolute;
-        right: 0.75rem;
-        top: 0.5rem;
-    }
+#blazor-error-ui .dismiss {
+    cursor: pointer;
+    position: absolute;
+    right: 0.75rem;
+    top: 0.5rem;
+}
+.header-navmenu ul li a {
+    font-weight: 700;  /* Жирный шрифт для логотипа и пунктов меню */
+}
+
+/* Можете добавить другие стили, например, для пунктов меню при наведении */
+.header-navmenu ul li a:hover {
+    font-weight: 600;  /* Немного уменьшить жирность на ховер */
+}
+
+/* Заголовки тоже можно сделать жирными */
+h1, h2, h3 {
+    font-weight: 600;  /* Средняя жирность для заголовков */
+}

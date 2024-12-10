@@ -4,36 +4,84 @@
     <projectFile profileName="http">ZhilKomStroy/ZhilKomStroy.csproj</projectFile>
     <projectFile profileName="https">ZhilKomStroy/ZhilKomStroy.csproj</projectFile>
   </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="8722688e-b95c-40c9-91dd-17ba83aa6edc" name="Changes" comment="" />
+    <list default="true" id="8722688e-b95c-40c9-91dd-17ba83aa6edc" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/ZhilKomStroy/Components/Pages/Home.razor.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ZhilKomStroy/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ZhilKomStroy/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZhilKomStroy/Components/App.razor" beforeDir="false" afterPath="$PROJECT_DIR$/ZhilKomStroy/Components/App.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZhilKomStroy/Components/Layout/MainLayout.razor" beforeDir="false" afterPath="$PROJECT_DIR$/ZhilKomStroy/Components/Layout/MainLayout.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZhilKomStroy/Components/Layout/MainLayout.razor.css" beforeDir="false" afterPath="$PROJECT_DIR$/ZhilKomStroy/Components/Layout/MainLayout.razor.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZhilKomStroy/Components/Layout/NavMenu.razor" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZhilKomStroy/Components/Layout/NavMenu.razor.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZhilKomStroy/Components/Pages/Counter.razor" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZhilKomStroy/Components/Pages/Error.razor" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZhilKomStroy/Components/Pages/Home.razor" beforeDir="false" afterPath="$PROJECT_DIR$/ZhilKomStroy/Components/Pages/Home.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZhilKomStroy/Components/Pages/Weather.razor" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 8
-}]]></component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Brodyaga1238&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Brodyaga1238/ZhilKomStroy.git&quot;,
+    &quot;accountId&quot;: &quot;f41b7fbb-76dc-4544-99f1-95603b1fdaff&quot;
+  }
+}</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/aspnetcore/af22effae4069a5dfb9b0735859de48820104f5b/src/Components/Components/src/LayoutComponentBase.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="2pzomNwh7nUxsvLCEVbNfu2YcpO" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Launch Settings Profile.ZhilKomStroy: http.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "C:\\Users\\nurla\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache",
-      "C:\\Users\\nurla\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache",
-      "C:\\Users\\nurla\\AppData\\Local\\Symbols\\src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\nurla\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\nurla\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\nurla\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Launch Settings Profile.ZhilKomStroy: http">
     <configuration name="ZhilKomStroy: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/ZhilKomStroy/ZhilKomStroy.csproj" />
@@ -74,7 +122,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1733778423724</updated>
-      <workItem from="1733778425408" duration="118000" />
+      <workItem from="1733778425408" duration="2411000" />
+      <workItem from="1733785716020" duration="1000" />
+      <workItem from="1733785752321" duration="5642000" />
+      <workItem from="1733855400524" duration="5257000" />
+      <workItem from="1733869953191" duration="760000" />
     </task>
     <servers />
   </component>
