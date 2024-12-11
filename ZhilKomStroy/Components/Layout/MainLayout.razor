@@ -1,36 +1,54 @@
 ﻿@inherits LayoutComponentBase
 
 <header class="Menu-top">
-    <div class="sticky-header">
-        <div class="header-logo">
-            <span>ЖилКомСтрой</span> <!-- Логотип или любой контент слева -->
-        </div>
-        <div class="header-time">
-            <span>Ежедневно с 8:00 до 23:00</span> <!-- Текст или другой контент по центру -->
-        </div>
-        <div class="header-tele-coll">
-            <p>Санкт-Петербург</p>
-            <button>Заказать звонок</button> <!-- Кнопка или другой элемент справа -->
-        </div>
-    </div>
     <div class="navigation-bar">
         <nav class="header-navmenu">
-            <ul>
-                <li><a href="#">Услуги</a></li>
-                <li><a href="#">О нас</a></li>
-                <li><a href="#">Акции</a></li>
-                <li><a href="#">Цены</a></li>
-                <li><a href="#">Отзывы</a></li>
-                <li><a href="#">Контакты</a></li>
+            <ul class="left-nav">
+                <li><a href="">Услуги</a></li>
+                <li><a href="/price">Цены</a></li>
+            </ul>
+            <div class="center-logo">
+                <span>ЖИЛКОМСТРОЙ</span> <!-- Название компании в центре -->
+            </div>
+            <ul class="right-nav">
+                <li><a href="#about-us">О нас</a></li>
+                <li><a href="#contact">Контакты</a></li>
             </ul>
         </nav>
     </div>
 </header>
-    <main>
-        <article class="content px-4">
-            @Body
-        </article>
-    </main>
+<main>
+    <article>
+        <section class="section-top">
+            <div class="main-container">
+                <div class="unmain-container">
+                    <div class="main-info">
+                        <h1>САНТЕХНИК НА ДОМ</h1>
+                        <h2>Санкт-Петербург</h2>
+                        <p><em>Бесплатная диагностика систем водоснабжения, сантехнического оборудования и систем канализации*</em></p>
+                        <button class="call-button">ПОЗВОНИТЬ</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        @Body
+    </article>
+    <!-- Контактная информация -->
+    <section class="contact-info" id="contact">
+        <div class="contact-container">
+            <h3>Контактная информация</h3>
+            <p><strong>Телефон:</strong> <a href="tel:+79211234567">+7 (921) 123-45-67</a></p>
+            <p><strong>Электронная почта:</strong> <a href="mailto:info@zhilkomstroy.ru">info@zhilkomstroy.ru</a></p>
+            <p><strong>Время работы:</strong> с 8:00 до 23:00 ежедневно</p>
+        </div>
+    </section>
+    <!-- Примечание о предоставленных услугах -->
+    <section class="disclaimer">
+        <div class="disclaimer-container">
+            <p><em>* Бесплатная диагностика предоставляется при условии выполнения работ или заказе услуг. Подробнее уточняйте по номеру телефона.</em></p>
+        </div>
+    </section>
+</main>
 
 
 <div id="blazor-error-ui" data-nosnippet>

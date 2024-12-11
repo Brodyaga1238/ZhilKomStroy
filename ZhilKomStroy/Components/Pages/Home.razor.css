@@ -1,1 +1,184 @@
-﻿
+﻿/* Стиль для всей секции */
+.about-us-section {
+    padding: 80px 0;  /* Увеличиваем отступы сверху и снизу */
+    background-color: #f4f4f4;  /* Светлый фон для секции */
+}
+
+/* Контейнер для контента */
+.about-us-container {
+    display: flex;
+    flex-wrap: wrap;  /* Даем возможность блокам переноситься */
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;  /* Увеличиваем отступы внутри контейнера */
+}
+
+/* Стиль для текста */
+.about-us-text {
+    flex: 1;
+    margin-right: 40px;  /* Увеличиваем отступ справа */
+    font-size: 18px;  /* Увеличиваем размер шрифта для текста */
+    line-height: 1.8;  /* Увеличиваем межстрочный интервал */
+    color: #333;
+    max-width: 600px;  /* Ограничиваем максимальную ширину текста */
+}
+
+/* Заголовок */
+.about-us-text h2 {
+    font-size: 36px;  /* Увеличиваем размер заголовка */
+    font-weight: bold;
+    color: #033e62;
+    margin-bottom: 30px;  /* Увеличиваем отступ снизу */
+}
+
+/* Стиль для фотографий */
+.about-us-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  /* Два столбца */
+    grid-gap: 30px;  /* Увеличиваем промежуток между фотографиями */
+    width: 100%;  /* Занимаем всю доступную ширину */
+    max-width: 800px;  /* Ограничиваем максимальную ширину блока с изображениями */
+    margin-top: 30px;  /* Добавляем отступ сверху */
+}
+
+/* Стиль для каждой фотографии */
+.image-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;  /* Увеличиваем скругление углов */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  /* Легкая тень для фотографий */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Эффект при наведении на изображения */
+.image-item img:hover {
+    transform: scale(1.1);  /* Увеличение изображения при наведении */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);  /* Увеличиваем тень при наведении */
+}
+
+/* Стили для секции "Преимущества компании" */
+/* Стили для секции "Преимущества компании" */
+/* Стили для секции "Преимущества компании" */
+.company-benefits {
+    background-color: #f9f9f9;  /* Светлый фон для секции */
+    padding: 120px 20px;  /* Увеличиваем отступы сверху и снизу */
+}
+
+/* Заголовок секции */
+.benefits-title {
+    font-size: 36px;  /* Увеличиваем размер заголовка */
+    font-weight: 700;
+    color: #000;  /* Черный цвет текста */
+    margin-bottom: 60px;  /* Увеличиваем отступ снизу */
+    text-align: center;
+}
+
+/* Стили для списка преимуществ */
+.benefits-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;  /* Векторное направление списка (по вертикали) */
+    align-items: flex-start;  /* Выравниваем все элементы списка по левому краю */
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Каждый пункт преимущества */
+.benefit-item {
+    display: flex;
+    align-items: flex-start;  /* Центрируем галочку и текст по вертикали */
+    font-size: 20px;  /* Увеличиваем размер текста */
+    color: #333;  /* Цвет текста */
+    margin: 50px 0;  /* Увеличиваем отступы между пунктами */
+    width: 100%;
+    justify-content: flex-start;  /* Текст и галочка выравниваются слева */
+}
+
+/* Стили для галочки в кружке */
+.check-icon {
+    width: 50px;  /* Увеличиваем размер галочки */
+    height: 50px;
+    border-radius: 50%;  /* Круглая форма */
+    border: 4px solid #ff8562;  /* Увеличиваем толщину рамки */
+    margin-right: 30px;  /* Увеличиваем отступ между галочкой и текстом */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;  /* Увеличиваем размер галочки */
+}
+
+/* Галочка внутри кружка */
+.check-icon::after {
+    content: "✔";  /* Галочка */
+    color: #ff8562;  /* Цвет галочки */
+}
+
+/* Текст с названием преимущества */
+.benefit-text h3 {
+    font-size: 24px;  /* Увеличиваем размер названия преимущества */
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 15px;  /* Увеличиваем отступ после названия */
+}
+
+/* Описание преимущества */
+.benefit-text p {
+    font-size: 18px;  /* Увеличиваем размер описания */
+    font-weight: 400;
+    color: #555;
+    margin: 0;  /* Убираем отступы */
+}
+.services {
+    font-family: Arial, sans-serif;
+    padding-left: 40px; /* Отступ слева для всего раздела */    
+    padding-right: 40px;
+    font-size: 16px; /* Увеличенный размер шрифта */
+}
+
+.services h3 {
+    text-align: center;
+    margin-bottom: 20px; /* Отступ снизу для заголовка */
+    font-weight: 500;
+    color: #000;
+    font-size: 32px; /* Размер шрифта для заголовка */
+}
+
+.services ul {
+    list-style-type: none;
+    padding: 0;
+    line-height: 1.6; /* Увеличенный межстрочный интервал */
+}
+
+.services li {
+    color: black; /* Остальной текст обычного цвета */
+    margin-bottom: 10px; /* Отступ между пунктами списка */
+}
+
+.services .highlight {
+    color: #024d73; /* Только текст в капсе будет синим */
+    font-weight: normal; /* Убираем жирность, если она была */
+}
+.company-info {
+   
+    margin-top: 40px; /* Отступ сверху для блока с информацией */
+}
+
+.company-info h2 {
+    text-align: center; /* Центрируем текст */
+    font-weight: 500;
+    font-size: 28px; /* Размер шрифта для заголовка */
+    margin-bottom: 20px; /* Отступ снизу для заголовка */
+}
+
+.company-info p {
+    text-align: left;
+    font-size: 18px; /* Размер шрифта для текста */
+    line-height: 1.6; /* Межстрочный интервал */
+    color: black; /* Цвет текста */
+    margin-bottom: 15px; /* Отступ между абзацами */
+}

@@ -1,0 +1,264 @@
+﻿@page "/price"
+
+<main>
+    <section class="services-section">
+        <div class="services-container">
+            <h2>Цены на Услуги Сантехника</h2>
+            <p>Предлагаем широкий спектр сантехнических услуг.</p>
+
+            @foreach (var categoryGroup in services.GroupBy(s => s.Category))
+            {
+                <h3>@categoryGroup.Key</h3> <!-- Заголовок категории -->
+
+                <table class="services-table">
+                    <thead>
+                    <tr>
+                        <th>Услуга</th>
+                        <th>Цена (руб.)</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    @foreach (var service in categoryGroup)
+                    {
+                        <tr>
+                            <td>@service.Name</td>
+                            <td>@service.Price</td>
+                        </tr>
+                    }
+                    </tbody>
+                </table>
+            }
+        </div>
+    </section>
+</main>
+
+@code {
+    private List<Service> services = new List<Service>
+    {
+    // Смесители
+        new Service { Name = "Установка смесителя отечественного производства на готовое место", Price = "1490", Category = "Смесители" },
+        new Service { Name = "Установка смесителя импортного производства на готовое место", Price = "1990", Category = "Смесители" },
+        new Service { Name = "Установка смесителя с терморегулятором на готовое место", Price = "2490", Category = "Смесители" },
+        new Service { Name = "Установка электронного смесителя на готовое место", Price = "2490", Category = "Смесители" },
+        new Service { Name = "Установка переходников", Price = "490", Category = "Смесители" },
+        new Service { Name = "Установка эксцентрика", Price = "490", Category = "Смесители" },
+        new Service { Name = "Установка эксцентриков (пара)", Price = "850", Category = "Смесители" },
+        new Service { Name = "Установка гибкой подводки", Price = "690", Category = "Смесители" },
+        new Service { Name = "Установка гибкой подводки (пара)", Price = "1100", Category = "Смесители" },
+        new Service { Name = "Выравнивание труб водоснабжения под эксцентрики", Price = "1290", Category = "Смесители" },
+        new Service { Name = "Сложный доступ/сложный демонтаж", Price = "1690", Category = "Смесители" },
+        new Service { Name = "Установка гигиенического душа", Price = "1990", Category = "Смесители" },
+        new Service { Name = "Установка картриджа", Price = "1390", Category = "Смесители" },
+        new Service { Name = "Установка кранбуксы", Price = "980", Category = "Смесители" },
+        new Service { Name = "Установка терморегулятора", Price = "1320", Category = "Смесители" },
+        new Service { Name = "Установка переключателя душа", Price = "1120", Category = "Смесители" },
+        new Service { Name = "Установка лейки или душевого шланга", Price = "1230", Category = "Смесители" },
+        new Service { Name = "Замена прокладки на гибкой подводке", Price = "350", Category = "Смесители" },
+        new Service { Name = "Установка аэратора", Price = "520", Category = "Смесители" },
+        new Service { Name = "Установка держателя для душевой лейки", Price = "1190", Category = "Смесители" },
+        new Service { Name = "Установка душевой штанги", Price = "1590", Category = "Смесители" },
+        new Service { Name = "Демонтаж гибкой подводки", Price = "390", Category = "Смесители" },
+        new Service { Name = "Демонтаж гибкой подводки (пара)", Price = "650", Category = "Смесители" },
+        new Service { Name = "Демонтаж кранбуксы", Price = "590", Category = "Смесители" },
+        new Service { Name = "Демонтаж смесителя", Price = "1290", Category = "Смесители" },
+        new Service { Name = "Демонтаж картриджа", Price = "1490", Category = "Смесители" },
+        new Service { Name = "Демонтаж терморегулятора", Price = "1590", Category = "Смесители" },
+        new Service { Name = "Демонтаж переключателя душа", Price = "790", Category = "Смесители" },
+        new Service { Name = "Демонтаж лейки или душевого шланга", Price = "790", Category = "Смесители" },
+        new Service { Name = "Демонтаж эксцентрика", Price = "790", Category = "Смесители" },
+        new Service { Name = "Демонтаж эксцентриков (пара)", Price = "1490", Category = "Смесители" },
+        new Service { Name = "Выпиливание старых эксцентриков", Price = "1490", Category = "Смесители" },
+        new Service { Name = "Демонтаж аэратора", Price = "220", Category = "Смесители" },
+        new Service { Name = "Сборка смесителя", Price = "1190", Category = "Смесители" },
+        new Service { Name = "Прогон и нарезка резьбы", Price = "990", Category = "Смесители" },
+        // Унитазы
+        new Service { Name = "Установка унитаза", Price = "2490", Category = "Унитазы" },
+        new Service { Name = "Установка биде или писсуара", Price = "2490", Category = "Унитазы" },
+        new Service { Name = "Установка гофры на унитаз", Price = "1790", Category = "Унитазы" },
+        new Service { Name = "Крепление унитаза к полу", Price = "1990", Category = "Унитазы" },
+        new Service { Name = "Герметизация подошвы унитаза", Price = "1490", Category = "Унитазы" },
+        new Service { Name = "Установка бачка унитаза", Price = "1790", Category = "Унитазы" },
+        new Service { Name = "Установка подвесного унитаза", Price = "2390", Category = "Унитазы" },
+        new Service { Name = "Установка заливной арматуры", Price = "1590", Category = "Унитазы" },
+        new Service { Name = "Установка сливной арматуры", Price = "1590", Category = "Унитазы" },
+        new Service { Name = "Демонтаж унитаза", Price = "1490", Category = "Унитазы" },
+        new Service { Name = "Демонтаж биде или писсуара", Price = "1690", Category = "Унитазы" },
+        new Service { Name = "Демонтаж гофры унитаза", Price = "1290", Category = "Унитазы" },
+        new Service { Name = "Демонтаж крышки унитаза", Price = "1190", Category = "Унитазы" },
+        new Service { Name = "Демонтаж бачка унитаза", Price = "1690", Category = "Унитазы" },
+        new Service { Name = "Демонтаж гибкой подводки", Price = "790", Category = "Унитазы" },
+        new Service { Name = "Демонтаж заливной арматуры", Price = "1190", Category = "Унитазы" },
+        new Service { Name = "Демонтаж сливной арматуры", Price = "1190", Category = "Унитазы" },
+        new Service { Name = "Демонтаж кнопки инсталяции", Price = "1290", Category = "Унитазы" },
+        new Service { Name = "Демонтаж инсталяции (только механизм)", Price = "1390", Category = "Унитазы" },
+        new Service { Name = "Демонтаж сололифта", Price = "1590", Category = "Унитазы" },
+        new Service { Name = "Подготовка посадочного места под унитаз", Price = "1790", Category = "Унитазы" },
+        new Service { Name = "Регулировка арматуры", Price = "1290", Category = "Унитазы" },
+        new Service { Name = "Установка гибкой подводки", Price = "790", Category = "Унитазы" },
+        new Service { Name = "Установка крышки унитаза", Price = "1290", Category = "Унитазы" },
+        new Service { Name = "Установка инсталяции (только механизм)", Price = "2890", Category = "Унитазы" },
+        new Service { Name = "Установка кнопки инсталяции", Price = "1490", Category = "Унитазы" },
+        new Service { Name = "Ремонт арматуры", Price = "1590", Category = "Унитазы" },
+        new Service { Name = "Установка кнопки унитаза", Price = "1290", Category = "Унитазы" },
+        new Service { Name = "Ремонт бачка моноблочного унитаза", Price = "4490", Category = "Унитазы" },
+        new Service { Name = "Установка сололифта", Price = "3490", Category = "Унитазы" },
+        new Service { Name = "Подключение сололифта", Price = "1990", Category = "Унитазы" },
+        new Service { Name = "Ремонт старой системы слива и подачи воды унитаза или инсталяции", Price = "1990", Category = "Унитазы" },
+          // Раковины
+        new Service { Name = "Удаление старого герметика", Price = "890", Category = "Раковины" },
+        new Service { Name = "Демонтаж раковины", Price = "1790", Category = "Раковины" },
+        new Service { Name = "Демонтаж кронштейнов", Price = "1290", Category = "Раковины" },
+        new Service { Name = "Демонтаж тумбы под раковину", Price = "1490", Category = "Раковины" },
+        new Service { Name = "Демонтаж 'Мойдодыр' без распила", Price = "1490", Category = "Раковины" },
+        new Service { Name = "Установка кранштейнов для мойки", Price = "1490", Category = "Раковины" },
+        new Service { Name = "Установка раковины", Price = "1990", Category = "Раковины" },
+        new Service { Name = "Сборка тумбы под раковину", Price = "1990", Category = "Раковины" },
+        new Service { Name = "Установка раковины 'Тюльпан'", Price = "2190", Category = "Раковины" },
+        new Service { Name = "Установка раковины 'Мойдодыр'", Price = "2490", Category = "Раковины" },
+        new Service { Name = "Герметизация раковины (без учета стоимости силикона)", Price = "690", Category = "Раковины" },
+
+        // Сифоны
+        new Service { Name = "Установка сифона простого", Price = "1290", Category = "Сифоны" },
+        new Service { Name = "Установка сифона металлического", Price = "2190", Category = "Сифоны" },
+        new Service { Name = "Установка обвязки для ванны", Price = "1590", Category = "Сифоны" },
+        new Service { Name = "Установка донного клапана", Price = "1290", Category = "Сифоны" },
+        new Service { Name = "Герметизация слива воды", Price = "1190", Category = "Сифоны" },
+        new Service { Name = "Демонтаж сифона", Price = "990", Category = "Сифоны" },
+        new Service { Name = "Демонтаж обвязки", Price = "1390", Category = "Сифоны" },
+        new Service { Name = "Ремонт сифона", Price = "1190", Category = "Сифоны" },
+        new Service { Name = "Установка гофры сифона", Price = "990", Category = "Сифоны" },
+        new Service { Name = "Установка перехода", Price = "1790", Category = "Сифоны" },
+
+        // Устранение засора
+        new Service { Name = "Устранение простого засора (вантузом)", Price = "от 990", Category = "Устранение засора" },
+        new Service { Name = "Прочистка засоров раковины, ванной, унитаза (без демонтажа)", Price = "от 1490", Category = "Устранение засора" },
+        new Service { Name = "Устранение засора с разбором труб канализации или демонтажем унитаза", Price = "от 2990", Category = "Устранение засора" },
+        new Service { Name = "Устранение засора электромеханическим способом", Price = "дог.", Category = "Устранение засора" },
+        new Service { Name = "Прочистка засоров эл.оборудования (насосы, сололифты, измельчители)", Price = "от 2490", Category = "Устранение засора" },
+
+        // Ванны
+        new Service { Name = "Удаление старого герметика", Price = "890", Category = "Ванны" },
+        new Service { Name = "Демонтаж ванны без учета выноса (акриловая)", Price = "1490", Category = "Ванны" },
+        new Service { Name = "Демонтаж ванны без учета выноса (стальная)", Price = "1990", Category = "Ванны" },
+        new Service { Name = "Демонтаж ванны без учета выноса (чугунная)", Price = "3590", Category = "Ванны" },
+        new Service { Name = "Демонтаж старого металлического слива ванны с распилом труб", Price = "3990", Category = "Ванны" },
+        new Service { Name = "Демонтаж экрана под ванну", Price = "990", Category = "Ванны" },
+        new Service { Name = "Демонтаж душевой штанги", Price = "990", Category = "Ванны" },
+        new Service { Name = "Демонтаж плинтуса для ванной", Price = "990", Category = "Ванны" },
+        new Service { Name = "Регулировка ванны по уровню", Price = "1290", Category = "Ванны" },
+        new Service { Name = "Установка стандартной акриловой ванны на готовую раму", Price = "2190", Category = "Ванны" },
+        new Service { Name = "Установка акриловой ванны со сборкой рамы", Price = "3190", Category = "Ванны" },
+        new Service { Name = "Установка ванны с гидромассажем", Price = "3490", Category = "Ванны" },
+        new Service { Name = "Установка ванны нестандартных размеров", Price = "4990", Category = "Ванны" },
+        new Service { Name = "Установка каркаса для ванны", Price = "1590", Category = "Ванны" },
+        new Service { Name = "Установка колонки гидромассажной", Price = "2990", Category = "Ванны" },
+        new Service { Name = "Установка экрана под ванну", Price = "1190", Category = "Ванны" },
+        new Service { Name = "Установка душевой штанги", Price = "1590", Category = "Ванны" },
+        new Service { Name = "Установка держателя для душевой лейки", Price = "1190", Category = "Ванны" },
+        new Service { Name = "Установка плинтуса для ванной", Price = "1190", Category = "Ванны" },
+        new Service { Name = "Герметизация ванны силиконом (без учета стоимости силикона)", Price = "1090", Category = "Ванны" },
+         // Ремонт душевых кабин
+        new Service { Name = "Удаление старого герметика", Price = "890", Category = "Ремонт душевых кабин" },
+        new Service { Name = "Демонтаж гибкой подводки", Price = "1290", Category = "Ремонт душевых кабин" },
+        new Service { Name = "Демонтаж сифона", Price = "1290", Category = "Ремонт душевых кабин" },
+        new Service { Name = "Удаление плесени", Price = "1990", Category = "Ремонт душевых кабин" },
+        new Service { Name = "Демонтаж смесителя", Price = "1490", Category = "Ремонт душевых кабин" },
+        new Service { Name = "Сложный доступ", Price = "1500", Category = "Ремонт душевых кабин" },
+        new Service { Name = "Герметизация душевой кабины", Price = "2090", Category = "Ремонт душевых кабин" },
+        new Service { Name = "Монтаж гибкой подводки", Price = "1290", Category = "Ремонт душевых кабин" },
+        new Service { Name = "Установка смесителя", Price = "2990", Category = "Ремонт душевых кабин" },
+        new Service { Name = "Установка сифона", Price = "1790", Category = "Ремонт душевых кабин" },
+        new Service { Name = "Устранение протечки", Price = "от 990", Category = "Ремонт душевых кабин" },
+        new Service { Name = "Ремонт переключателя", Price = "1490", Category = "Ремонт душевых кабин" },
+        new Service { Name = "Ремонт сифона", Price = "1490", Category = "Ремонт душевых кабин" },
+
+        // Полотенцесушитель
+        new Service { Name = "Установка полотенцесушителя", Price = "2490", Category = "Полотенцесушитель" },
+        new Service { Name = "Установка прокладки", Price = "1490", Category = "Полотенцесушитель" },
+        new Service { Name = "Монтаж байпаса", Price = "3490", Category = "Полотенцесушитель" },
+        new Service { Name = "Перенос полотенцесушителя", Price = "4490", Category = "Полотенцесушитель" },
+        new Service { Name = "Демонтаж полотенцесушителя", Price = "1690", Category = "Полотенцесушитель" },
+        new Service { Name = "Демонтаж байпаса", Price = "2190", Category = "Полотенцесушитель" },
+        new Service { Name = "Демонтаж прокладки", Price = "1290", Category = "Полотенцесушитель" },
+        new Service { Name = "Демонтаж эксцентрика", Price = "1490", Category = "Полотенцесушитель" },
+        new Service { Name = "Сложный доступ, сложный демонтаж", Price = "1500", Category = "Полотенцесушитель" },
+        new Service { Name = "Установка эксцентрика", Price = "1990", Category = "Полотенцесушитель" },
+        new Service { Name = "Профилактика и очистка", Price = "1990", Category = "Полотенцесушитель" },
+
+        // Инженерная сантехника
+        new Service { Name = "Расчеканка чугунной трубы до 65 мм", Price = "2590", Category = "Инженерная сантехника" },
+        new Service { Name = "Расчеканка чугунной трубы от 65 мм", Price = "4390", Category = "Инженерная сантехника" },
+        new Service { Name = "Разводка труб ПП за 1 метр", Price = "690", Category = "Инженерная сантехника" },
+        new Service { Name = "Разводка труб МП за 1 метр", Price = "570", Category = "Инженерная сантехника" },
+        new Service { Name = "Крепление трубы к стене на клипсы диам до 45 мм", Price = "250", Category = "Инженерная сантехника" },
+        new Service { Name = "Сварка труб ПП", Price = "450", Category = "Инженерная сантехника" },
+        new Service { Name = "Монтаж водорозетки", Price = "850", Category = "Инженерная сантехника" },
+        new Service { Name = "Прогон и нарезка резьбы", Price = "990", Category = "Инженерная сантехника" },
+        new Service { Name = "Установка шарового крана", Price = "1190", Category = "Инженерная сантехника" },
+        new Service { Name = "Установка обратного клапана", Price = "1090", Category = "Инженерная сантехника" },
+        new Service { Name = "Установка редуктора", Price = "1390", Category = "Инженерная сантехника" },
+        new Service { Name = "Установка коллектора (гребенки на готовые коммуникации) 1 выход", Price = "1490", Category = "Инженерная сантехника" },
+        new Service { Name = "Установка коллектора (гребенки на готовые коммуникации) последующий выход", Price = "990", Category = "Инженерная сантехника" },
+        new Service { Name = "Установка тройника", Price = "990", Category = "Инженерная сантехника" },
+        new Service { Name = "Установка фильтра грубой очистки", Price = "1290", Category = "Инженерная сантехника" },
+        new Service { Name = "Установка фильтра тонкой очистки", Price = "2190", Category = "Инженерная сантехника" },
+        new Service { Name = "Установка фильтра с отдельным краном", Price = "2590", Category = "Инженерная сантехника" },
+        new Service { Name = "Установка счетчика", Price = "1490", Category = "Инженерная сантехника" },
+        new Service { Name = "Установка заглушки", Price = "990", Category = "Инженерная сантехника" },
+        new Service { Name = "Установка ниппеля", Price = "1090", Category = "Инженерная сантехника" },
+        new Service { Name = "Установка соединительной манжеты", Price = "1190", Category = "Инженерная сантехника" },
+        new Service { Name = "Разводка труб канализации ПВХ", Price = "250", Category = "Инженерная сантехника" },
+        new Service { Name = "Крепление трубы к стене на клипсы диам от 50 мм до 110 мм", Price = "250", Category = "Инженерная сантехника" },
+        new Service { Name = "Замена участка канализационного стояка", Price = "5990", Category = "Инженерная сантехника" },
+        new Service { Name = "Демонтаж радиатора отопления", Price = "1990", Category = "Инженерная сантехника" },
+        new Service { Name = "Демонтаж кронштейнов батареи", Price = "1290", Category = "Инженерная сантехника" },
+        new Service { Name = "Установка кронштейнов батареи", Price = "1990", Category = "Инженерная сантехника" },
+        new Service { Name = "Установка терморегулятора", Price = "1790", Category = "Инженерная сантехника" },
+        new Service { Name = "Установка радиатора отопления", Price = "2990", Category = "Инженерная сантехника" },
+        new Service { Name = "Опрессовка системы отопления", Price = "дог.", Category = "Инженерная сантехника" },
+        new Service { Name = "Опрессовка батареи", Price = "3490", Category = "Инженерная сантехника" },
+
+        // Бытовая техника
+        new Service { Name = "Демонтаж стиральной машины", Price = "990", Category = "Бытовая техника" },
+        new Service { Name = "Демонтаж посудомоечной машины", Price = "1090", Category = "Бытовая техника" },
+        new Service { Name = "Демонтаж бойлера", Price = "1590", Category = "Бытовая техника" },
+        new Service { Name = "Установка стиральной машины на готовые коммуникации", Price = "1390", Category = "Бытовая техника" },
+        new Service { Name = "Установка посудомоечной машины", Price = "1590", Category = "Бытовая техника" },
+        new Service { Name = "Установка водонагревателя накопительного до 50л", Price = "4450", Category = "Бытовая техника" },
+        new Service { Name = "Установка водонагревателя накопительного более 50л", Price = "5990", Category = "Бытовая техника" },
+        new Service { Name = "Подключение проточного водонагревателя, на готовые коммуникации", Price = "1990", Category = "Бытовая техника" },
+        new Service { Name = "Подключение стиральной машины", Price = "1390", Category = "Бытовая техника" },
+        new Service { Name = "Подключение посудомоечной машины", Price = "1590", Category = "Бытовая техника" },
+
+        // Другие работы
+        new Service { Name = "Выезд мастера - Ложный выезд", Price = "990", Category = "Другие работы" },
+        new Service { Name = "Простой мастера по вине клиента", Price = "1500", Category = "Другие работы" },
+        new Service { Name = "Работы на высоте (с приставных лестниц, стремянок и т.д.)", Price = "x1,5", Category = "Другие работы" },
+        new Service { Name = "Работы в загрязненных помещениях", Price = "x1,5", Category = "Другие работы" },
+        new Service { Name = "Срочный заказ мастера/срочный выезд", Price = "x1,5", Category = "Другие работы" },
+        new Service { Name = "Заказ прибыть на адрес мастера после 21:00", Price = "x2", Category = "Другие работы" },
+        new Service { Name = "Работы с дорогостоящими материалами и оборудованием", Price = "дог.", Category = "Другие работы" },
+        new Service { Name = "Стесненные условия при выполнении работ", Price = "x2", Category = "Другие работы" },
+        new Service { Name = "Сложный доступ при выполнении работ", Price = "x2", Category = "Другие работы" },
+        new Service { Name = "Устная консультация клиента", Price = "690", Category = "Другие работы" },
+        new Service { Name = "Составление сметы для клиента", Price = "2000", Category = "Другие работы" },
+        new Service { Name = "Доставка деталей и материалов", Price = "дог.", Category = "Другие работы" },
+        new Service { Name = "Монтаж зеркала S=1 кв.м", Price = "790", Category = "Другие работы" },
+        new Service { Name = "Монтаж зеркала S более 1 кв.м", Price = "1190", Category = "Другие работы" },
+        new Service { Name = "Монтаж полки", Price = "590", Category = "Другие работы" },
+        new Service { Name = "Монтаж декоративных предметов на стену", Price = "590", Category = "Другие работы" },
+        new Service { Name = "Монтаж вешалки", Price = "790", Category = "Другие работы" },
+        new Service { Name = "Обезжиривание поверхности перед герметизацией швов", Price = "350", Category = "Другие работы" },
+        new Service { Name = "Перемещение мебели в пределах квартиры", Price = "450", Category = "Другие работы" },
+        new Service { Name = "Перемещение других предметов интерьера в пределах квартиры", Price = "450", Category = "Другие работы" },
+        new Service { Name = "Подъем, спуск бытовой техники", Price = "450", Category = "Другие работы" },
+        new Service { Name = "Вынос упаковочного материала", Price = "500", Category = "Другие работы" }
+    };
+
+    public class Service
+    {
+        public string Name { get; set; }
+        public string Price { get; set; }
+        public string Category { get; set; }
+    }
+}

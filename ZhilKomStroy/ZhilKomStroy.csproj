@@ -6,4 +6,21 @@
         <ImplicitUsings>enable</ImplicitUsings>
     </PropertyGroup>
 
+    <ItemGroup>
+      <None Include="wwwroot\background_image.jpg" />
+      <None Remove="Images\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Remove="Images\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Remove="Images\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Remove="Images\**" />
+    </ItemGroup>
+
 </Project>
