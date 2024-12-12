@@ -7,7 +7,6 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <None Include="wwwroot\background_image.jpg" />
       <None Remove="Images\**" />
     </ItemGroup>
 
