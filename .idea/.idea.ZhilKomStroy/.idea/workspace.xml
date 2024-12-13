@@ -9,17 +9,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8722688e-b95c-40c9-91dd-17ba83aa6edc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ZhilKomStroy/Components/Pages/Services.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ZhilKomStroy/Components/Pages/Services.razor.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ZhilKomStroy/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ZhilKomStroy/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ZhilKomStroy/Components/Layout/MainLayout.razor" beforeDir="false" afterPath="$PROJECT_DIR$/ZhilKomStroy/Components/Layout/MainLayout.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZhilKomStroy/Components/Layout/MainLayout.razor.css" beforeDir="false" afterPath="$PROJECT_DIR$/ZhilKomStroy/Components/Layout/MainLayout.razor.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZhilKomStroy/Components/Pages/Home.razor" beforeDir="false" afterPath="$PROJECT_DIR$/ZhilKomStroy/Components/Pages/Home.razor" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ZhilKomStroy/Components/Pages/Home.razor.css" beforeDir="false" afterPath="$PROJECT_DIR$/ZhilKomStroy/Components/Pages/Home.razor.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ZhilKomStroy/ZhilKomStroy.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ZhilKomStroy/ZhilKomStroy.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZhilKomStroy/Components/Pages/Price.razor" beforeDir="false" afterPath="$PROJECT_DIR$/ZhilKomStroy/Components/Pages/Price.razor" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DpaMonitoringSettings">
+    <option name="autoShow" value="false" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -129,6 +132,8 @@
       <workItem from="1733964818093" duration="67000" />
       <workItem from="1733964908539" duration="41000" />
       <workItem from="1733964961344" duration="384000" />
+      <workItem from="1734017837214" duration="680000" />
+      <workItem from="1734062538449" duration="4751000" />
     </task>
     <task id="LOCAL-00001" summary="header end">
       <option name="closed" value="true" />
@@ -146,7 +151,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733950735739</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Update Home">
+      <option name="closed" value="true" />
+      <created>1734017874394</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1734017874394</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -158,6 +171,7 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="header end" />
     <MESSAGE value="end home page" />
-    <option name="LAST_COMMIT_MESSAGE" value="end home page" />
+    <MESSAGE value="Update Home" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update Home" />
   </component>
 </project>

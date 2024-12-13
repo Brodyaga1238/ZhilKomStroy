@@ -56,12 +56,19 @@ main {
     padding: 10px 15px;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
-.center-logo {
-    flex-grow: 1;
-    text-align: center;
+.center-logo a {
+    color: white; /* Цвет текста */
+    text-decoration: none; /* Убираем подчеркивание */
     font-size: 20px;
     font-weight: 700;
-    color: white;
+    padding: 10px 15px; /* Подобный стиль как у других ссылок */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 4px; /* Закругленные углы */
+}
+
+.center-logo a:hover {
+    background-color: #024d73; /* Цвет фона при наведении */
+    color: #ffd700; /* Цвет текста при наведении */
 }
 .left-nav a:hover, .right-nav a:hover {
     background-color: #024d73;
