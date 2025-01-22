@@ -9,12 +9,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8722688e-b95c-40c9-91dd-17ba83aa6edc" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/ZhilKomStroy/Components/Pages/ModalForm.razor" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ZhilKomStroy/Components/Pages/ModalForm.razor.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ZhilKomStroy/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ZhilKomStroy/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ZhilKomStroy/Components/Layout/MainLayout.razor" beforeDir="false" afterPath="$PROJECT_DIR$/ZhilKomStroy/Components/Layout/MainLayout.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ZhilKomStroy/Components/Layout/MainLayout.razor.css" beforeDir="false" afterPath="$PROJECT_DIR$/ZhilKomStroy/Components/Layout/MainLayout.razor.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ZhilKomStroy/Components/Pages/Home.razor" beforeDir="false" afterPath="$PROJECT_DIR$/ZhilKomStroy/Components/Pages/Home.razor" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ZhilKomStroy/Components/Pages/Home.razor.css" beforeDir="false" afterPath="$PROJECT_DIR$/ZhilKomStroy/Components/Pages/Home.razor.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ZhilKomStroy/Components/Pages/Price.razor" beforeDir="false" afterPath="$PROJECT_DIR$/ZhilKomStroy/Components/Pages/Price.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZhilKomStroy/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ZhilKomStroy/Properties/launchSettings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +48,7 @@
 }</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/aspnetcore/af22effae4069a5dfb9b0735859de48820104f5b/src/Components/Components/src/LayoutComponentBase.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/nurla/RiderProjects/ZhilKomStroy/ZhilKomStroy/Components/Pages/Home.razor" root0="SKIP_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -133,7 +134,11 @@
       <workItem from="1733964908539" duration="41000" />
       <workItem from="1733964961344" duration="384000" />
       <workItem from="1734017837214" duration="680000" />
-      <workItem from="1734062538449" duration="4751000" />
+      <workItem from="1734062538449" duration="5423000" />
+      <workItem from="1734108006704" duration="1636000" />
+      <workItem from="1736545777376" duration="5269000" />
+      <workItem from="1736557432945" duration="4326000" />
+      <workItem from="1737568608303" duration="643000" />
     </task>
     <task id="LOCAL-00001" summary="header end">
       <option name="closed" value="true" />
@@ -159,7 +164,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734017874394</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="update services and home page">
+      <option name="closed" value="true" />
+      <created>1734067357036</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1734067357036</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,6 +185,7 @@
     <MESSAGE value="header end" />
     <MESSAGE value="end home page" />
     <MESSAGE value="Update Home" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update Home" />
+    <MESSAGE value="update services and home page" />
+    <option name="LAST_COMMIT_MESSAGE" value="update services and home page" />
   </component>
 </project>

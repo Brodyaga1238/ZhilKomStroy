@@ -238,7 +238,8 @@
 
 .service-item button {
     display: inline-block;
-    background-color: #d85e3b;
+    background-color: #e16a13;
+    
     color: white;
     font-size: 18px;
     border: none;
@@ -253,7 +254,7 @@
 }
 
 .service-item button:hover {
-    background-color: #e16a13;
+    background-color: #d85e3b;
 }
 
 /* Эффект увеличения на элементах при наведении */
