@@ -8,7 +8,7 @@ meta:
 build:
   image: null
 run:
-  image: ZhilKomStroy
+  image: ""
   buildFileName: null
   persistenceMount: /data
   containerPort: 80
