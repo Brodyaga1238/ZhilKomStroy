@@ -1,0 +1,559 @@
+/* _content/ZhilKomStroy/Components/Layout/MainLayout.razor.rz.scp.css */
+body[b-2x5l9hixj5] {
+    font-family: 'Poppins', sans-serif;  /* Применяем шрифт Poppins */
+    font-weight: 400;  /* Стандартная жирность (обычный текст) */
+    line-height: 1.6;  /* Интерлиньяж для удобочитаемости */
+    color: #333;  /* Цвет текста */
+}
+.Menu-top[b-2x5l9hixj5]{
+    position: sticky;
+    top: 0;  /* Когда прокручивается, шапка остаётся на верхней границе экрана */
+    z-index: 1000; /* Обеспечивает, чтобы шапка была поверх других элементов */
+}
+/* Шапка */
+
+main[b-2x5l9hixj5] {
+    padding-bottom: 50px;  /* Добавляем отступ снизу, чтобы основной контент не перекрывался меню */
+}
+.navigation-bar[b-2x5l9hixj5] {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #033e62;
+    color: white;
+    padding: 10px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between; /* Распределяем элементы */
+    align-items: center;
+}
+.header-navmenu[b-2x5l9hixj5] {
+    font-family: 'Georgia', serif;
+    display: flex;
+    width: 100%;
+    justify-content: space-between; /* Разделяет блоки слева и справа */
+    align-items: center;
+}
+.left-nav[b-2x5l9hixj5], .right-nav[b-2x5l9hixj5] {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.left-nav li[b-2x5l9hixj5], .right-nav li[b-2x5l9hixj5] {
+    margin: 0 10px;
+}
+.header-navmenu ul[b-2x5l9hixj5] {
+    display: flex;
+    list-style: none;  /* Убираем маркеры у списка */
+    margin: 0;
+    padding: 0;
+}
+.left-nav a[b-2x5l9hixj5], .right-nav a[b-2x5l9hixj5] {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.center-logo a[b-2x5l9hixj5] {
+    color: white; /* Цвет текста */
+    text-decoration: none; /* Убираем подчеркивание */
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px 15px; /* Подобный стиль как у других ссылок */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 4px; /* Закругленные углы */
+}
+
+.center-logo a:hover[b-2x5l9hixj5] {
+    background-color: #024d73; /* Цвет фона при наведении */
+    color: #ffd700; /* Цвет текста при наведении */
+}
+.left-nav a:hover[b-2x5l9hixj5], .right-nav a:hover[b-2x5l9hixj5] {
+    background-color: #024d73;
+    color: #ffd700;
+    border-radius: 4px;
+}
+
+/* Заголовки */
+h1[b-2x5l9hixj5], h2[b-2x5l9hixj5], h3[b-2x5l9hixj5] {
+    font-weight: 600;
+}
+
+/* Правый блок */
+.header-tele-coll[b-2x5l9hixj5] {
+    text-align: right;
+    padding-right: 5px;
+}
+
+/* Стили для кнопки*/
+.header-tele-coll button[b-2x5l9hixj5] {
+    background-color: #fd7e14 ;  /* Зеленая кнопка */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+}
+/* Кнопка Наведённая*/
+.header-tele-coll button:hover[b-2x5l9hixj5] {
+    background-color: #e16a13;  /* Более темный цвет при наведении */
+}
+
+#blazor-error-ui[b-2x5l9hixj5] {
+    color-scheme: light only;
+    background: lightyellow;
+    bottom: 0;
+    box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    display: none;
+    left: 0;
+    padding: 0.6rem 1.25rem 0.7rem 1.25rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+#blazor-error-ui .dismiss[b-2x5l9hixj5] {
+    cursor: pointer;
+    position: absolute;
+    right: 0.75rem;
+    top: 0.5rem;
+}
+.section-top[b-2x5l9hixj5] {
+    position: relative;
+    background-image: url('background_image_1.jpg'); /* Фоновое изображение */
+    background-size: cover; /* Покрытие всего контейнера */
+    background-position: center; /* Центрирование изображения */
+    color: white; /* Цвет текста */
+    display: flex; /* Включаем Flexbox */
+    justify-content: center; /* Горизонтальное центрирование */
+    align-items: center; /* Вертикальное центрирование */
+    margin: 0; /* Убираем отступы */
+    height: 100vh
+}
+.header-navmenu ul li a[b-2x5l9hixj5] {
+    font-weight: 700;  /* Жирный шрифт для логотипа и пунктов меню */
+}
+
+/* Можете добавить другие стили, например, для пунктов меню при наведении */
+.header-navmenu ul li a:hover[b-2x5l9hixj5] {
+    font-weight: 600;  /* Немного уменьшить жирность на ховер */
+}
+
+/* Заголовки тоже можно сделать жирными */
+h1[b-2x5l9hixj5], h2[b-2x5l9hixj5], h3[b-2x5l9hixj5] {
+    font-weight: 600;  /* Средняя жирность для заголовков */
+}
+
+.unmain-container[b-2x5l9hixj5] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.main-info[b-2x5l9hixj5] {
+    max-width: 90%;  /* Ограничиваем ширину блока */
+    text-align: center;  /* Центрируем текст внутри блока */
+
+    font-family: 'Georgia', serif;
+}
+
+.main-info h1[b-2x5l9hixj5], .main-info h2[b-2x5l9hixj5], .main-info p[b-2x5l9hixj5] {
+    margin: 0;  /* Отступы между заголовками и текстом */
+}
+
+/* Дополнительное стилизование для текста */
+.main-info h1[b-2x5l9hixj5] {
+    font-size: 82px;
+    font-weight: 700;
+    background-color: rgba(0, 0, 0, 0.1);  /* Черный фон с 10% прозрачностью */
+}
+
+.main-info h2[b-2x5l9hixj5] {
+    font-size: 52px;
+    font-weight: 600;
+    background-color: rgba(0, 0, 0, 0.1);  /* Черный фон с 10% прозрачностью */
+}
+
+.main-info p[b-2x5l9hixj5] {
+    font-size: 24px;
+    background-color: rgba(0, 0, 0, 0.1);  /* Черный фон с 10% прозрачностью */
+}
+.call-button[b-2x5l9hixj5] {
+    display: inline-block;
+    margin-top: 40px;  /* Отступ сверху */
+    padding: 10px 20px;  /* Внутренние отступы */
+    background-color: #d85e3b;  /* Цвет фона кнопки */
+    color: white;  /* Белый цвет текста */
+    font-size: 18px;  /* Размер текста */
+    border: none;  /* Убираем стандартную рамку */
+    border-radius: 3px;  /* Скругляем углы */
+    cursor: pointer;  /* Курсор в виде руки */
+    text-align: center;  /* Центрируем текст в кнопке */
+    transition: background-color 0.3s ease;  /* Плавное изменение цвета */
+    width: 60%;  /* Устанавливаем ширину кнопки в 60% от родительского элемента */
+    max-width: 200px;
+
+}
+
+/* Эффект при наведении на кнопку */
+.call-button:hover[b-2x5l9hixj5] {
+    background-color: #c2562d;  /* Темный оттенок при наведении */
+}
+.contact-info[b-2x5l9hixj5] {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-container h3[b-2x5l9hixj5] {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.contact-container p[b-2x5l9hixj5] {
+    font-size: 1.2em;
+    margin: 5px 0;
+}
+
+.contact-container a[b-2x5l9hixj5] {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.contact-container a:hover[b-2x5l9hixj5] {
+    text-decoration: underline;
+}
+.disclaimer[b-2x5l9hixj5] {
+    background-color: #f9f9f9;
+    padding: 15px;
+    text-align: center;
+    font-style: italic;
+    font-size: 1em;
+    color: #333;
+}
+
+.disclaimer-container p[b-2x5l9hixj5] {
+    margin: 0;
+}
+/* _content/ZhilKomStroy/Components/Pages/Home.razor.rz.scp.css */
+/* Стиль для всей секции */
+.about-us-section[b-6lbdo3q4k7] {
+    padding: 80px 0;  /* Увеличиваем отступы сверху и снизу */
+    background-color: #f4f4f4;  /* Светлый фон для секции */
+}
+
+/* Контейнер для контента */
+.about-us-container[b-6lbdo3q4k7] {
+    display: flex;
+    flex-wrap: wrap;  /* Даем возможность блокам переноситься */
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;  /* Увеличиваем отступы внутри контейнера */
+}
+
+/* Стиль для текста */
+.about-us-text[b-6lbdo3q4k7] {
+    flex: 1;
+    margin-right: 40px;  /* Увеличиваем отступ справа */
+    font-size: 18px;  /* Увеличиваем размер шрифта для текста */
+    line-height: 1.8;  /* Увеличиваем межстрочный интервал */
+    color: #333;
+    max-width: 600px;  /* Ограничиваем максимальную ширину текста */
+}
+
+/* Заголовок */
+.about-us-text h2[b-6lbdo3q4k7] {
+    font-size: 36px;  /* Увеличиваем размер заголовка */
+    font-weight: bold;
+    color: #033e62;
+    margin-bottom: 30px;  /* Увеличиваем отступ снизу */
+}
+
+/* Стиль для фотографий */
+.about-us-images[b-6lbdo3q4k7] {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  /* Два столбца */
+    grid-gap: 30px;  /* Увеличиваем промежуток между фотографиями */
+    width: 100%;  /* Занимаем всю доступную ширину */
+    max-width: 800px;  /* Ограничиваем максимальную ширину блока с изображениями */
+    margin-top: 30px;  /* Добавляем отступ сверху */
+}
+
+/* Стиль для каждой фотографии */
+.image-item img[b-6lbdo3q4k7] {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;  /* Увеличиваем скругление углов */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  /* Легкая тень для фотографий */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Эффект при наведении на изображения */
+.image-item img:hover[b-6lbdo3q4k7] {
+    transform: scale(1.1);  /* Увеличение изображения при наведении */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);  /* Увеличиваем тень при наведении */
+}
+
+/* Стили для секции "Преимущества компании" */
+/* Стили для секции "Преимущества компании" */
+/* Стили для секции "Преимущества компании" */
+.company-benefits[b-6lbdo3q4k7] {
+    background-color: #f9f9f9;  /* Светлый фон для секции */
+    padding: 120px 20px;  /* Увеличиваем отступы сверху и снизу */
+}
+
+/* Заголовок секции */
+.benefits-title[b-6lbdo3q4k7] {
+    font-size: 36px;  /* Увеличиваем размер заголовка */
+    font-weight: 700;
+    color: #033e62;  /* Черный цвет текста */
+    margin-bottom: 60px;  /* Увеличиваем отступ снизу */
+    text-align: center;
+}
+
+/* Стили для списка преимуществ */
+.benefits-list[b-6lbdo3q4k7] {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;  /* Векторное направление списка (по вертикали) */
+    align-items: flex-start;  /* Выравниваем все элементы списка по левому краю */
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Каждый пункт преимущества */
+.benefit-item[b-6lbdo3q4k7] {
+    display: flex;
+    align-items: flex-start;  /* Центрируем галочку и текст по вертикали */
+    font-size: 20px;  /* Увеличиваем размер текста */
+    color: #333;  /* Цвет текста */
+    margin: 50px 0;  /* Увеличиваем отступы между пунктами */
+    width: 100%;
+    justify-content: flex-start;  /* Текст и галочка выравниваются слева */
+}
+
+/* Стили для галочки в кружке */
+.check-icon[b-6lbdo3q4k7] {
+    width: 50px;  /* Увеличиваем размер галочки */
+    height: 50px;
+    border-radius: 50%;  /* Круглая форма */
+    border: 4px solid #ff8562;  /* Увеличиваем толщину рамки */
+    margin-right: 30px;  /* Увеличиваем отступ между галочкой и текстом */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;  /* Увеличиваем размер галочки */
+}
+
+/* Галочка внутри кружка */
+.check-icon[b-6lbdo3q4k7]::after {
+    content: "✔";  /* Галочка */
+    color: #ff8562;  /* Цвет галочки */
+}
+
+/* Текст с названием преимущества */
+.benefit-text h3[b-6lbdo3q4k7] {
+    font-size: 24px;  /* Увеличиваем размер названия преимущества */
+    font-weight: 700;
+    color: #033e62;
+    margin-bottom: 15px;  /* Увеличиваем отступ после названия */
+}
+
+/* Описание преимущества */
+.benefit-text p[b-6lbdo3q4k7] {
+    font-size: 18px;  /* Увеличиваем размер описания */
+    font-weight: 400;
+    color: #555;
+    margin: 0;  /* Убираем отступы */
+}
+.services[b-6lbdo3q4k7] {
+    font-family: Arial, sans-serif;
+    margin-top: 20px;
+    padding-left: 40px; /* Отступ слева для всего раздела */    
+    padding-right: 40px;
+    font-size: 16px; /* Увеличенный размер шрифта */
+}
+
+.services h3[b-6lbdo3q4k7] {
+    font-size: 36px;  /* Увеличиваем размер заголовка */
+    font-weight: 700;
+    color: #033e62;  /* Черный цвет текста */
+    margin-bottom: 60px;  /* Увеличиваем отступ снизу */
+    text-align: center;
+}
+
+.services ul[b-6lbdo3q4k7] {
+    list-style-type: none;
+    padding: 0;
+    line-height: 1.6; /* Увеличенный межстрочный интервал */
+}
+
+.services li[b-6lbdo3q4k7] {
+    color: black; /* Остальной текст обычного цвета */
+    margin-bottom: 10px; /* Отступ между пунктами списка */
+}
+
+.services .highlight[b-6lbdo3q4k7] {
+    color: #024d73; /* Только текст в капсе будет синим */
+    font-weight: normal; /* Убираем жирность, если она была */
+}
+.company-info[b-6lbdo3q4k7] {
+   
+    margin-top: 40px; /* Отступ сверху для блока с информацией */
+}
+
+.company-info h2[b-6lbdo3q4k7] {
+    font-size: 36px;  /* Увеличиваем размер заголовка */
+    font-weight: 700;
+    color: #033e62;  /* Черный цвет текста */
+    margin-bottom: 60px;  /* Увеличиваем отступ снизу */
+    text-align: center;
+}
+
+.company-info p[b-6lbdo3q4k7] {
+    text-align: left;
+    font-size: 18px; /* Размер шрифта для текста */
+    line-height: 1.6; /* Межстрочный интервал */
+    color: black; /* Цвет текста */
+    margin-bottom: 15px; /* Отступ между абзацами */
+}
+.services-list[b-6lbdo3q4k7] {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 40px 60px;
+}
+
+.services-list-row[b-6lbdo3q4k7] {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap; /* Для корректного отображения элементов */
+}
+
+.service-item[b-6lbdo3q4k7] {
+    width: 23%; /* Чтобы было 4 элемента в строке */
+    height: 457px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    transition: transform 0.3s ease-in-out; /* Плавное увеличение */
+    border-radius: 8px;
+}
+
+.service-item img[b-6lbdo3q4k7] {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out; /* Плавное увеличение изображения */
+    border-radius: 8px;
+}
+
+.service-item h3[b-6lbdo3q4k7] {
+    font-size: 18px;
+    color: #333;
+}
+
+.service-item p[b-6lbdo3q4k7] {
+    font-size: 14px;
+    color: #777;
+}
+
+.service-item .price[b-6lbdo3q4k7] {
+    font-size: 16px;
+    color: #2a9d8f;
+    font-weight: bold;
+}
+
+.service-item button[b-6lbdo3q4k7] {
+    display: inline-block;
+    background-color: #e16a13;
+    
+    color: white;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    width: 60%;
+    max-width: 200px;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.service-item button:hover[b-6lbdo3q4k7] {
+    background-color: #d85e3b;
+}
+
+/* Эффект увеличения на элементах при наведении */
+.service-item:hover[b-6lbdo3q4k7] {
+    transform: scale(1.05); /* Увеличивает весь элемент */
+}
+
+.service-item:hover img[b-6lbdo3q4k7] {
+    transform: scale(1.03); /* Увеличивает только картинку */
+}
+.services-title h3[b-6lbdo3q4k7] {
+    font-size: 36px;  /* Увеличиваем размер заголовка */
+    font-weight: 700;
+    color: #033e62;  /* Черный цвет текста */
+    margin-top: 60px;  /* Увеличиваем отступ снизу */
+    text-align: center;
+}
+/* Уменьшение размеров для маленьких экранов */
+.services-list-row:last-child[b-6lbdo3q4k7] {
+    justify-content: center;
+}
+
+/* _content/ZhilKomStroy/Components/Pages/ModalForm.razor.rz.scp.css */
+/* _content/ZhilKomStroy/Components/Pages/Price.razor.rz.scp.css */
+/* Стили для страницы с услугами */
+.services-section[b-tsomewhtv4] {
+    padding: 50px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.services-container[b-tsomewhtv4] {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.services-table[b-tsomewhtv4] {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.services-table th[b-tsomewhtv4], .services-table td[b-tsomewhtv4] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.services-table th[b-tsomewhtv4] {
+    background-color: #033e62;
+    color: white;
+}
+
+h3[b-tsomewhtv4]{
+    margin: 5px 0;
+}
+/* _content/ZhilKomStroy/Components/Pages/Services.razor.rz.scp.css */
