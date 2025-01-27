@@ -9,6 +9,6 @@ build:
   image: null
 run:
   image: ""
-  buildFileName: null
+  buildFileName: ZhilKomStroy
   persistenceMount: /data
   containerPort: 80
