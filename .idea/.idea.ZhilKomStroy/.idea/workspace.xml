@@ -8,9 +8,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8722688e-b95c-40c9-91dd-17ba83aa6edc" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ZhilKomStroy/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ZhilKomStroy/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="8722688e-b95c-40c9-91dd-17ba83aa6edc" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -135,6 +133,7 @@
       <workItem from="1736545777376" duration="5269000" />
       <workItem from="1736557432945" duration="4326000" />
       <workItem from="1737568608303" duration="1804000" />
+      <workItem from="1737997421132" duration="1097000" />
     </task>
     <task id="LOCAL-00001" summary="header end">
       <option name="closed" value="true" />
@@ -176,7 +175,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737569530816</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add amvera">
+      <option name="closed" value="true" />
+      <created>1737997455602</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1737997455602</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -191,7 +198,8 @@
     <MESSAGE value="Update Home" />
     <MESSAGE value="update services and home page" />
     <MESSAGE value="test" />
-    <option name="LAST_COMMIT_MESSAGE" value="test" />
+    <MESSAGE value="add amvera" />
+    <option name="LAST_COMMIT_MESSAGE" value="add amvera" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
