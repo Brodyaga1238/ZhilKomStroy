@@ -1,0 +1,9 @@
+---
+version: null
+meta:
+  environment: csharp
+  toolchain:
+    name: docker
+    version: latest
+build: {}
+run: {}
